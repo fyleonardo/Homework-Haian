@@ -1,21 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FY's Resume</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="bootstrap.min.js"></script>
+    <link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 70px;
+        }
+    </style>
 </head>
 
-<body>
-    <div class="container">
+<body class="container">
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <div class="navbar-brand">Personal Resume</div>
+
+                </div>
+                <div id="divNav" class="collapse navbar-collapse">
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <div class="row">
+        <!-- 左侧 -->
+        <div class="col-sm-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">个人信息</div>
+                <div class="panel-body">
+                    <img src="head_portrait.jpg" class="img-responsive img-rounded img-thumbnail" alt="Me">
+                    <p class="text-center text-primary" style="font-size: 32px;">封颖</p>
+                    <address>
+                         <strong>中国</strong><br>
+                         <span class="fa fa-map-marker" title="Address"><kbd>江苏省泰州市</kbd></span><br>
+                         <span class="fa fa-github" title="PostalCoded"><a href="https://github.com/fyleonardo/Homework-Haian.git">My GitHub</a></span><br>
+                         <span class="fa fa-phone" title="Mobile">13852888550</span><br>
+                         <span class="fa fa-envelope" title="Email"><code>273010020@qq.com</code></span>
+                     </address>
+                </div>
+            </div>
+
+        </div>
+        <!-- 右侧 -->
+        <div class="col-sm-9">
+            <div class="jumbotron">
+                <p class="text-left small">
+                    意向职位：交互设计师
+                    <br>我平时喜爱画画，爱看动漫，善于发现生活中的问题，寻求问题的解决方案，有同理心，热爱交互设计。本科计算机的经历也更有利于我与项目成员沟通。
+                    <br>Don't panic I‘m a designer.
+                </p>
+            </div>
+
+            <div class="panel-group" id="accoradion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <a href="#collapseOne" data-toggle="collapse" data-parent="#accoradion">教育经历</a>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item list-group-item-success">
+                                        <div class="row">
+                                            <div class="col-sm-4">2016/09-至今</div>
+                                            <div class="col-sm-4">南通大学</div>
+                                            <div class="col-sm-4">计算机科学与技术（嵌入式）</div>
+                                        </div>
+                                    </li>
 
 
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <a href="#collapseTwo" data-toggle="collapse" data-parent="#accoradion">技能</a>
+                        </div>
+
+
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item list-group-item-success">
+                                        <div class="row">
+                                            <div class="col-sm-4">熟悉</div>
+                                            <div class="col-sm-8">Photoshop、Axure</div>
+
+                                        </div>
+                                    </li>
+
+                                    <li class="list-group-item list-group-item-warning">
+                                        <div class="row">
+                                            <div class="col-sm-4">熟悉</div>
+                                            <div class="col-sm-8">用户调研、竞品分析</div>
+
+                                        </div>
+                                    </li>
+
+                                    <li class="list-group-item list-group-item-info">
+                                        <div class="row">
+                                            <div class="col-sm-4">熟悉</div>
+                                            <div class="col-sm-8">Html5、CSS3、Bootstrap</div>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
     </div>
 
+    <footer>
+        <nav class="navbar-fixed-bottom text-center navbar-default">
+
+        </nav>
+    </footer>
 </body>
+
 
 </html>

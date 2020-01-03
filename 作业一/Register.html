@@ -23,32 +23,134 @@
             width: 120px;
             height: 30px;
         }
+        
+        .login-box {
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+        
+        .login-box p {
+            text-align: center;
+        }
+        
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        ul,
+        ol,
+        li {
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #1a66b3;
+            font-size: 12px;
+            font-family: Arial, 微软雅黑;
+        }
+        
+        .on ul {
+            display: none;
+        }
+        
+        .on {
+            width: 100px;
+            border: 1px solid #e6e6e6;
+            line-height: 20px;
+            background: #fff;
+        }
+        
+        a:hover {
+            color: #ff2832;
+        }
+        
+        .topDown li:hover {
+            background: #f2f2f2;
+            color: #000;
+        }
+        
+        .xia {
+            margin: 0px auto;
+            width: 200px;
+        }
+        
+        .top-m>li a {
+            padding: 0 18px;
+        }
+        
+        .top-m>li {
+            line-height: 22px;
+            padding-top: 5px;
+        }
+        
+        .xia {
+            position: fixed;
+            top: 0;
+            left: 100px;
+        }
     </style>
 </head>
 
 <body>
+    <!-- nav -->
+    <div class="xia">
+        <ul class="top-m">
+            <li class="on">
+                <a href="" class="menu-btn">Vsinger</a>
+                <ul class="topDown">
+                    <li><a href="">洛天依</a></li>
+                    <li><a href="">乐正绫</a></li>
+                    <li><a href="">言和</a></li>
+                    <li><a href="">乐正龙牙</a></li>
+                    <li><a href="">墨清玄</a></li>
+                    <li><a href="">徵羽摩柯</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".on").hover(function() {
+                    $(".topDown").show();
+                },
+                function() {
+                    $(".topDown").hide();
+                }
+            );
+        });
+    </script>
     <!--登陆页面-->
-    <div id="logo">
-        <img src="C:\Users\fyLeo\Desktop\海安实训\作业\作业一\img\logo1.jpg"> 欢迎登陆! <br />
+    <div class="login-box">
+        <div id="logo">
+            <img src="img\logo1.jpg">
+            <p>欢迎登陆!</p>
 
+        </div>
+        <div>
+            <form>
+                <table>
+                    <tr>
+                        <td>用户名：</td>
+                        <td><input id="i1" name="Username" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>密码：</td>
+                        <td><input id="i2" name="Password" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input id="i3" type="button" value="登陆" onclick="tl()"></td>
+                    </tr>
+                </table>
+
+            </form>
+
+        </div>
     </div>
-    <div>
-        <form>
-            <dl>
-                <dt>用户名：<input id="i1" name="Username" type="text"></dt>
 
-            </dl>
-            <dl>
-                <dt>密码：<input id="i2" name="Password" type="text"><br /></dt>
-
-            </dl>
-            <dl>
-                <dt><input id="i3" type="button" value="登陆" onclick="tl()"></dt>
-            </dl>
-
-        </form>
-
-    </div>
 
 
 
